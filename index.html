@@ -1,0 +1,116 @@
+<html>
+<meta charset='UTF-8' />
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5'
+  name='viewport' />
+<meta content='IE=edge' http-equiv='X-UA-Compatible' />
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+<script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+<link href="heibukayuk/style.css" rel="stylesheet" type="text/css" />
+
+<head>
+  <title>Heyy Istriku(Insyaallah)!</title>
+</head>
+
+<body>
+
+  <div id="bodyblur">
+    <!-- Wallpaper / Background --><img src="images/pics/rumahan.jpeg" id="wallpaper" />
+  </div>
+
+  <div class="kumpulanstiker">
+    <!-- Stiker untuk Konten -->
+    <img src="images/peachheart.gif" id="fotoakhir1" />
+    <img src="images/pandangambek.gif" id="fotoakhir2" />
+    <img src="images/snuggles-caring.gif" id="fotoakhir3" />
+    <img src="images/raintogether.gif" id="fotoakhir4" />
+    <img src="images/peachkiss.gif" id="fotoakhir5" />
+    <img src="images/cubitin.gif" id="fotoakhir6" />
+  </div>
+
+  <div id='Content'>
+
+    <div id="suratin" onClick="memulai();audio.play();">
+      <!-- Surat --><img src="images/envelope.png" />
+    </div>
+    <p id="ket">Klik Suratnya!</p>
+
+    <div><!-- Foto Akhir --><img src="images/raintogether.gif" id="fotoakhir" /></div>
+    <div>
+      <blockquote id='bq'>
+        <p id="kalimat"></p>
+        <p id="kalimatc"></p>
+      </blockquote>
+    </div>
+
+    <!-- Tombol Kirim Pesan -->
+    <div id="Tombol">
+      <a onClick="sjawab()">
+        <b>💌 Balas</b>
+      </a>
+    </div>
+
+  </div>
+
+  <script src="heibukayuk/script.js"></script>
+
+  <!-- Ganti Kata², Foto, Lagu di bawah ya
+1) Upload foto ke https://postimages.org
+     buat dapetin linknya
+2) Ganti Lagu Upload ke replit.com
+     atau bisa juga ke mailboxdrive.com -->
+
+  <script type="text/javascript">
+    async function jawab() {
+      const pesanwhatsapp = "Halo, ini adalah pesan otomatis."; // Ganti dengan pesan yang diinginkan
+      await Swal.fire('Kirim pesan ke WhatsApp aku, ya!');
+      window.location = "https://api.whatsapp.com/send?phone=6285175385357&text=" + encodeURIComponent(pesanwhatsapp);
+    }
+
+    async function pertama() {
+      audio = new Audio('music/thrtx.mp3'); setTimeout(showDiv, 100);
+    } pertama();
+
+    function tunjukkan() { document.getElementById("sticky-ad").style = "bottom: 0px"; }
+    function hilangkan() { document.getElementById("sticky-ad").style = "bottom: -130px"; }
+
+    tunjukkan();
+
+
+    async function pesan() {
+      await swalst.fire({
+        title: 'Heyy Istriku(Insyaallah)! 😍',
+        imageUrl: '' + fotoakhir1.src,
+      });
+      await swalst.fire({
+        title: 'Aku Tau Ara Sekarang Lagi Tidak Baik-baik saja kan🌪️🌍',
+        imageUrl: '' + fotoakhir2.src,
+      });
+      await swalst.fire({
+        title: 'Ara Pasti Cape Dengan Semua Ini,Rasanya Ingin Teriak kenceng kan,Isi Kepala Rasanya berisik banget ya?🤯',
+        imageUrl: '' + fotoakhir3.src,
+      });
+      await swalst.fire({
+        title: 'Kamu Bilang Cape,Pengen Nyerah,Buktinya Ara Bisa Melangkah Sejauh Ini,Sampai Detik Ini.Itu Artinya Ara Hebat!!🤗🤗🤗',
+        imageUrl: '' + fotoakhir4.src,
+      });
+      await swalst.fire({
+        title: 'Semoga Ara Selalu Di Kelilingi Oleh Orang-Orang Yang Baik🙋..',
+        imageUrl: '' + fotoakhir5.src,
+      });
+
+      await swalst.fire({
+        title: 'Anggap Saja Semua Proses Ara,Dapat Membentuk Mental Ara Lebih Kuat Dari Sebelumnya.',
+        imageUrl: '' + fotoakhir6.src,
+      });
+
+      katangetik = "Cuman Mau Bilang Meskipun Sedang Emosi,Marah,Kesal,Cape Jangan Pernah Tinggalin Sholat Ya🥰..Belok-Belok gak papa asal tetap sholat ya..jangan menyerah yakinlah Ini semua hanya Masalah waktu saja..You can Do it";
+      katangetik2 = "i'm always support you! ✨<br>";
+
+      pesanwhatsapp = "aww";
+      setTimeout(kpemb, 200);
+    }
+  </script>
+</body>
+
+</html>
